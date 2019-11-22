@@ -21,8 +21,8 @@ class FlutterBlue {
     // Send the log level to the underlying platforms.
     setLogLevel(logLevel);
   }
-  static FlutterBlue _instance = new FlutterBlue._();
-  static FlutterBlue get instance => _instance;
+  static FlutterBlue _instance = FlutterBlue._();
+  static FlutterBlue get instance  => _instance;
 
   /// Log level of the instance, default is all messages (debug).
   LogLevel _logLevel = LogLevel.debug;
